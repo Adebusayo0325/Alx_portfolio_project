@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    min-height: 100vh;
+    margin: 0;
+    background-color: white;
+}
+header{
+    margin: 0;
+    min-height: 5vh;
+    position: relative;
+    z-index: 10;
+}
+nav{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+/* background-color: green; */
+width: 90%;
+margin: 0 auto;
+flex: 1 1 60rem;
+padding: 1.5rem;
+box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+}
+.logo{
+    font-size: 1.5rem;
+    font-style: italic;
+    flex: 1 1 40rem;
+}
+.nav-links{
+    display: flex;
+    list-style: none;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    flex: 1 1 40rem;
+}
+.nav-links li a{
+    text-decoration: none;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: rgb(22, 122, 37);
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    max-width: 50px;
+    border-radius: 20%;
+    flex: 1 1 20rem;
+}
+.sign-in{
+    list-style: none;
+    margin-right: 0.5rem;
+    border:  solid rgb(13, 45, 18) 1px;
+    border-radius: 2px;
+}
+.sign-in li{
+    flex:  1 1 30rem;
+}
+/* main{
+  
+} */
+.container{
+      min-height: 90vh;
+    width: 90%;
+    margin: 0 auto;
+    background-color:  #8be392 ;
+}
+.sign-in li a{
+     background-color: transparent;
+}
+.hero-section{
+    width: 100%;
+    /* margin: 0 auto; */
+    height: 500px;
+
+}
+.hero-section img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.intro{
+    background-color:  #5dc265;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+min-height: 50vh;
+}
+.intro h1{
+    font-size: 3rem;
+    font-weight: 500;
+    width: 100%;
+    color: white;
+    text-shadow: 0 1px 5px red;
+    padding: 2rem;
+    text-align: center;
+}
+.desc{
+    font-size: 2rem;
+    color: #333;
+    width: 100%;
+}
+.mentro{
+    padding: 1rem 2.5rem;
+    color: #333;
+margin-top: 2rem;
+border: 0;
+border: dashed  2px #205424;
+margin-bottom: 2rem;
+cursor: pointer;
+}
+.mentro a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color:  #205424;
+    
+}
+
+.feature{
+    display: flex;
+    flex-wrap: nowrap ;
+}
+.feature .gif{
+    flex:  1 1 40rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+max-height: 400px;
+}
+.feature .gif img{
+    width: 150%;
+    height: 100%;
+    object-fit: cover;
+}
+.feature .info{
+    flex: 1 1 40rem;
+}
+
+figcaption{
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: underline;
+    color: #205424;
+    /* color: #fff; */
+    margin-top: 3rem;
+}
+.feature p{
+    font-size: 1.3rem;
+    width: 50%;
+    margin-top: 3rem;
+}
+
+.about{
+    min-height: 30vh;
+
+}
+.about h3{
+    font-size: 2rem;
+    color: #205424;
+    padding: 1.5rem 1rem;
+
+}
+.about p{
+     font-size: 1.1rem;
+    padding: 0 0.3rem;
+}
+.team{
+    min-height: 30vh;
+        background-color: #3d7b42;
+        width: 50%;
+        margin : 0 auto;
+        box-shadow: inset 0px 5px 120px  #3d7b42;
+     /* background-color: rgb(94, 174, 231); */
+}
+.teammates{
+    list-style: none;
+    height: 50%;
+
+}
+.teammates li{
+    display:  flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    max-height: 5vh;
+    margin-top: 10rem;
+    /* overflow: hidden; */
+    width: 100%;
+    border : 1px solid green;
+      min-height: 300px;
+      padding: 2rem;
+}
+.person{
+    flex:  1 1 20rem;
+}
+.person a{
+    text-decoration: none;
+    font-weight:  700;
+    font-size: 1.8rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.pic{
+    flex:  1 1 20rem;
+
+  border: 1px solid orange;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+ background-color:  #8be392;
+  align-items: center;
+}
+.pic img{
+ width: 80%;
+    height: 80%;
+    width: 200px;
+  height: 200px ;
+  border-radius: 10px;
+    object-fit: cover;
+}
+.links{
+    width: 80%;
+    margin :0 auto ;
+    min-height: 5vh;
+}
+.links p{
+    font-size: 18px;
+}
+
+
+
+
+
+footer h4 {
+  flex: 1 1 40rem;
+  align-items: center;
+}
+
+footer ul {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+
+footer {
+  background: #205424;
+  color: #fff;
+  min-height: 10vh;
+  padding: 0% 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin :0 auto;
+}
