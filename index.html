@@ -13,22 +13,29 @@
         WebfIND
     </div>
     <ul class="nav-links">
-        <li><a href="#">Mentors</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Introduction</a></li>
+        <li><a href="#mentor">Mentors</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#intro">Introduction</a></li>
          <div class="sign-in">
           <li><a href="#">Sign in</a></li>
           
     </div>
     </ul>
-    
+   
+      <div class="burger">
+                   <span class="line line1"></span> 
+                   <span class="line line2"></span>
+                   <span class="line line3"></span>
+                    </div>
+                
+
     </nav>
    
 
 </header>
 <main>
     <div class="container">
-        <div class="hero-section">
+        <div class="hero-section" id="intro">
             <img src="landing-page.jpg" alt="cover-image">
         </div>
         <div class="intro">
@@ -38,10 +45,10 @@
             <h3 class="desc">
       Are you a developer ? <br>or a new-bie to web development seeking a mentor?      
             </h3>
-            <button class="mentro"><a href="#">    Find your Mentor</a></button>
+            <button class="mentro"><a href="https://coders-den-mentro-web-challenge.netlify.app/">    Find your Mentor</a></button>
         </div>
 
-<div class="feature">
+<div class="feature" id="mentor">
     <div class="gif">
         <img src="Mentro Challenge PCView.gif" alt="mentro gif">;
 
@@ -55,13 +62,13 @@
     </div>
 
 </div>
-<div class="about">
+<div id="about" class="about">
     <h3>About</h3>
     <p>This project was inspired by the ordeals me and my team went through without proper guidance in web development and software engineering</p>
 </div>
 
 <div class="team">
-    <ul class="teammates">
+    <ul id="team" class="teammates">
     
         <li><div class="person"><a href="#">Adediran Eunice</a></div> <div class="pic"><img src="IMG_20220516_065222_356.jpg" alt="Busayo"></div></li>
  <li><div class="pic"><img src="IMG_20220516_065222_356.jpg" alt="Busayo"></div>       <div class="person"><a href="#">Abiose Waliu </a></div></li>
@@ -70,9 +77,9 @@
     </ul>
     </div>
     <div class="links">
-    <p>click the above links to access our github</p>
+    <p ><a href = "#team" >click the above links to access our github </a> </p>
 <h5>
-    <a href="#" target="_blank" rel="noopener noreferrer">click this link to access our project repository</a>
+    <a href="https://github.com/Adebusayo0325/Front-end-Mentor-challenge/" target="_blank" rel="noopener noreferrer">click this link to access our project repository</a>
     
 </h5>
 </div>
@@ -104,4 +111,41 @@
 
 </footer>
 </body>
+<script>
+  const footerData = document.querySelector('.year');
+  let year = new Date()
+
+
+
+ let getYear = year.getFullYear()
+ 
+footerData.innerText = getYear
+
+const nav = document.querySelector('.nav-links');
+
+const burger = document.querySelector('.burger');
+const links = nav.querySelectorAll('a');
+
+
+burger.addEventListener('click', () => {
+    nav.classList.toggle('display');
+  burger.classList.toggle('nav-opener');
+
+})
+
+links.forEach(link =>{
+    link.addEventListener("click", () => {
+           nav.classList.remove('display');
+  burger.classList.remove('nav-opener');
+    shifted.classList.remove('shift')
+    })
+})
+const colors = ["#c1b001", "#a8140e", "#4315aa", "#359d09", "#8f4762"];
+window.addEventListener("mousedown", (e) => {
+  const color = colors.shift();
+  document.documentElement.style.setProperty("--highlight-color", color);
+  colors.push(color);
+});
+
+</script>
 </html>
